@@ -1,0 +1,8 @@
+<div class="container-fluid">
+  <div class="text-danger" ng-if="error">{{error}}</div>
+  <div class="row" ng-repeat='item in found'>
+    <div class="col-md-4">{{item.short_name}} - {{ item.name }}</div>
+    <div class="col-md-6"><em>{{item.description}}</em></div>
+    <div class="col-md-2"><button class="btn btn-default btn-sm" ng-click="onRemove({index: $index})">Don't want this one!</button></div>
+  </div>
+</div>
